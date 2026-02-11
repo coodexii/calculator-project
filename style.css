@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+  font-family: system-ui, sans-serif;
+}
+
+:root {
+  --bg: #e75aba;
+  --card: rgba(38, 143, 172, 0.08);
+  --display: #831064;
+  --text: #e5e7eb;
+  --btn: rgba(255,255,255,0.1);
+  --op: rgba(18, 18, 18, 0.4);
+  --eq: rgba(120, 55, 119, 0.6);
+}
+
+body.light {
+  --bg: #e5e7eb;
+  --card: #ffffff;
+  --display: #f1f5f9;
+  --text: #020617;
+  --btn: #e5e7eb;
+  --op: #c7d2fe;
+  --eq: #9e2998;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  background: linear-gradient(135deg, var(--bg), #0f172a);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator-card {
+  background: var(--card);
+  padding: 20px;
+  border-radius: 20px;
+  width: 320px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+  color: var(--text);
+  transition: 0.3s;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.theme-btn {
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.display {
+  background: var(--display);
+  padding: 14px;
+  border-radius: 12px;
+  text-align: right;
+  font-size: 28px;
+  margin-bottom: 14px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+button {
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  background: var(--btn);
+  color: var(--text);
+  font-size: 18px;
+  cursor: pointer;
+  transition: transform 0.1s ease, filter 0.1s ease;
+}
+
+button:active {
+  transform: scale(0.95);
+  filter: brightness(1.2);
+}
+
+.op {
+  background: var(--op);
+}
+
+.equal {
+  grid-row: span 2;
+  background: var(--eq);
+}
+
+.zero {
+  grid-column: span 2;
+}
+
+.shake {
+  animation: shake 0.3s;
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
