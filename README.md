@@ -18,8 +18,8 @@ A simple calculator web app built using vanilla HTML, CSS, and JavaScript.
 - CSS
 - JavaScript
 
-## Notes
-This project is for learning purposes and can be extended with more advanced features.
-
 ## Live Demo
 https://coodexii.github.io/calculator-project/
+
+## Notes
+This project is for learning purposes and can be extended with more advanced features.
