@@ -14,13 +14,13 @@
 }
 
 body.light {
-  --bg: #e5e7eb;
-  --card: #ffffff;
-  --display: #f1f5f9;
+  --bg: #3d5482;
+  --card: rgba(38, 143, 172, 0.08);
+  --display: #8abcef;
   --text: #020617;
   --btn: #e5e7eb;
   --op: #c7d2fe;
-  --eq: #9e2998;
+  --eq: #295098;
 }
 
 body {
@@ -55,6 +55,8 @@ body {
   font-size: 20px;
   cursor: pointer;
 }
+
+
 
 .display {
   background: var(--display);
@@ -111,3 +113,5 @@ button:active {
   75% { transform: translateX(-5px); }
   100% { transform: translateX(0); }
 }
+
+
